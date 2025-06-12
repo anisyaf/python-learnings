@@ -11,7 +11,7 @@ This folder contains foundational Python exercises to reinforce core programming
 5. Comparison and logical operators
 6. Arithmetic operations and modulus
 
-## File #1: [`functions_and_conditionals`](01-basics/functions_and_conditionals)
+## File #1: [`functions_and_conditionals`]
 
 This script includes:
 - A nested function call to compute product of products
