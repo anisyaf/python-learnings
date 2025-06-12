@@ -1,0 +1,46 @@
+# Basic Python Functions and Conditionals
+
+# Function to return the product of two numbers
+def product(a, b):
+    return a * b
+
+# Nested function call: product of (2*4) and (3*5)
+print(product(product(2, 4), product(3, 5)))  # Output: 120
+
+# Function to return the difference of two numbers
+def difference(a, b):
+    return a - b
+
+# Function to return the sum of two numbers
+def sum(a, b):
+    return a + b
+
+# Difference between two sums: (2+2) - (3+3)
+print(difference(sum(2, 2), sum(3, 3)))  # Output: -2
+
+# Comparison using logical and arithmetic operators
+print((5 >= 2 * 4) and (5 <= 4 * 3))  # Output: False
+
+# Conditional with 'or' and modulus
+x = 3
+if x + 5 > x**2 or x % 4 != 0:
+    print("This comparison is true")  # Output: This comparison is true
+
+# More conditionals with elif and else
+num = 6
+if num * 2 < 14:
+    print(num * 6 % 3)  # Output: 0
+elif num > 7:
+    print(100 / num)
+else:
+    print(7 - num)
+
+# Function to calculate normalized remainder with input checks
+def get_remainder(x, y):
+    if x == 0 or y == 0 or x == y:
+        remainder = 0
+    else:
+        remainder = (x % y) / y
+    return remainder
+
+print(get_remainder(10, 3))  # Output: 0.333...
