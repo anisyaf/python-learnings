@@ -1,0 +1,112 @@
+# Hall Effect Experiment Graphs — Cleaned Version
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+# Set global plot style (optional)
+plt.style.use('seaborn-v0_8-whitegrid')
+
+# -------- Plot 1: Hall Voltage vs Control Current --------
+def plot_hall_voltage_vs_current():
+    control_current = [-30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25, 30]
+    hall_voltage = [-5.48, -5.46, -5.43, -5.41, -5.39, -5.36, -5.34, -5.31, -5.27, -5.24, -5.21, -5.17, -5.13]
+
+    plt.figure()
+    plt.plot(control_current, hall_voltage, color='green', label='VH vs Current')
+    plt.scatter(control_current, hall_voltage, color='green', s=50)
+    plt.xlabel('Current, I (mA)')
+    plt.ylabel('Hall Voltage, VH (V)')
+    plt.title('Hall Voltage as a Function of Current')
+    plt.figtext(0.5, 0.60, 'B = 250 mT, Room Temperature', ha='right')
+    plt.legend()
+    plt.savefig('hall_voltage_vs_current.png')
+    plt.show()
+
+# -------- Plot 2: Change in Resistance vs Magnetic Flux --------
+def plot_resistance_change_vs_flux():
+    magnetic_flux = [20.1, 40.3, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300]
+    r_ro = [-0.6264, -0.6264, -0.6258, -0.6247, -0.6244, -0.6234, -0.6233, -0.6222, -0.6218,
+            -0.6209, -0.6198, -0.6191, -0.6178, -0.6173, -0.6162]
+
+    plt.figure()
+    plt.plot(magnetic_flux, r_ro, color='green', label='(R - Ro)/Ro')
+    plt.scatter(magnetic_flux, r_ro, color='green', s=50)
+    plt.xlabel('Magnetic Flux, B (mT)')
+    plt.ylabel('(R - Ro) / Ro')
+    plt.title('Change of Resistance vs Magnetic Field')
+    plt.legend()
+    plt.savefig('resistance_vs_flux.png')
+    plt.show()
+
+# -------- Plot 3: 1/Vs vs 1/T --------
+def plot_inverse_vs_vs_temperature():
+    df = pd.read_csv('GRAPH3_EXP2.csv')
+    x = df['1/T']
+    y = df['1/Vs']
+
+    plt.figure()
+    plt.plot(x, y, label='1/Vs vs 1/T')
+    plt.scatter(x, y, s=50)
+    plt.xlabel('1/T (10⁻³ K⁻¹)')
+    plt.ylabel('1/Vs (V⁻¹)')
+    plt.title('1/Vs vs 1/T')
+    plt.legend()
+    plt.savefig('inverse_vs_vs_temperature.png')
+    plt.show()
+
+# -------- Plot 4: ln(1/Vs) vs 1/T --------
+def plot_ln_inverse_vs_vs_temperature():
+    df = pd.read_csv('Book1.csv')
+    x = df['1/T']
+    y = df['ln (1/Vs)']
+
+    plt.figure()
+    plt.plot(x, y, label='ln(1/Vs) vs 1/T')
+    plt.scatter(x, y, s=50)
+    plt.xlabel('1/T (10⁻³ K⁻¹)')
+    plt.ylabel('ln(1/Vs) (V⁻¹)')
+    plt.title('ln(1/Vs) vs 1/T')
+    plt.legend()
+    plt.savefig('ln_inverse_vs_vs_temperature.png')
+    plt.show()
+
+# -------- Plot 5: Hall Voltage vs Magnetic Flux --------
+def plot_hall_voltage_vs_flux():
+    df = pd.read_csv('GRAPH4_EXP2.csv')
+    x = df['Magnetic flux']
+    y = df['Hall Voltage']
+
+    plt.figure()
+    plt.plot(x, y, label='VH vs B')
+    plt.scatter(x, y, s=50)
+    plt.xlabel('Magnetic Flux, B')
+    plt.ylabel('Hall Voltage, VH')
+    plt.title('Hall Voltage vs Magnetic Flux')
+    plt.legend()
+    plt.savefig('hall_voltage_vs_flux.png')
+    plt.show()
+
+# -------- Plot 6: Hall Voltage vs Temperature --------
+def plot_hall_voltage_vs_temperature():
+    df = pd.read_csv('GRAPH5_EXP2.csv')
+    x = df['Temperature']
+    y = df['Hall Voltage']
+
+    plt.figure()
+    plt.plot(x, y, label='VH vs T')
+    plt.scatter(x, y, s=50)
+    plt.xlabel('Temperature, T (°C)')
+    plt.ylabel('Hall Voltage, VH (V)')
+    plt.title('Hall Voltage vs Temperature')
+    plt.legend()
+    plt.savefig('hall_voltage_vs_temperature.png')
+    plt.show()
+
+# -------- Run All Plots --------
+if __name__ == '__main__':
+    plot_hall_voltage_vs_current()
+    plot_resistance_change_vs_flux()
+    plot_inverse_vs_vs_temperature()
+    plot_ln_inverse_vs_vs_temperature()
+    plot_hall_voltage_vs_flux()
+    plot_hall_voltage_vs_temperature()
