@@ -1,4 +1,4 @@
-# 00-basics
+# 01-basics
 
 This folder contains foundational Python exercises to reinforce core programming concepts.
 
@@ -11,7 +11,7 @@ This folder contains foundational Python exercises to reinforce core programming
 - Comparison and logical operators
 - Arithmetic operations and modulus
 
-## File: `functions_and_conditionals.py`
+## File #1: `functions_and_conditionals.py`
 
 This script includes:
 - A nested function call to compute product of products
@@ -19,7 +19,7 @@ This script includes:
 - Logic examples using comparisons and compound conditions
 - A function to calculate normalized remainders with safety checks
 
-## Example Output
+### Example Output
 120
 -2
 False
