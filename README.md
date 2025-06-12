@@ -23,7 +23,7 @@ Welcome! This repository documents my Python learning journey, including coursew
 
 1. Hall Effect Data Visualization
 
-📂 [`06-physics-scripts/hall-effect-plot.py`](./06-physics-scripts/hall-effect-plot.py)
+📂 [`06-physics-scripts/hall-effect-plot.py`]([./06-physics-scripts/hall-effect-plot.py](https://github.com/anisyaf/python-learnings/blob/main/PHY636%20HALL%20EFFECT%20IN%20P-GERMANIUM.ipynb))
 
 - Visualizes data from a **Hall Effect experiment on p-type Germanium**
 - Uses Python libraries like `matplotlib` and `pandas` to generate:
@@ -44,10 +44,10 @@ Welcome! This repository documents my Python learning journey, including coursew
 
 ## Currently Working On
 
-- Completing **Module X** of Google IT Automation with Python
+- Completing **Module 3** of Course 1 of Google IT Automation with Python
 - Uploading **Python basics**, **automation scripts**, and **past C++ work on c-plus learnings**
 - Logging learning progress weekly
 
 ---
 
-Thanks for checking out my journey! Feel free to explore, suggest, or follow along. 👋
+Thanks for checking out my journey! Feel free to explore, suggest, or follow along :)
