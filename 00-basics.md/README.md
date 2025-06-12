@@ -1,4 +1,4 @@
-# 01-basics
+# 00-basics
 
 This folder contains foundational Python exercises to reinforce core programming concepts.
 
