@@ -18,7 +18,7 @@ Welcome! This repository documents my Python learning journey, including coursew
 
 1. Hall Effect Data Visualization
 
-📂 [`01-projects/hall-effect-plot.py`]([./06-physics-scripts/hall-effect-plot.py](https://github.com/anisyaf/python-learnings/blob/main/PHY636%20HALL%20EFFECT%20IN%20P-GERMANIUM.ipynb))
+📂 [`01-projects/hall-effect-plot.py`]([01-projects/hall-effect-plotter]))
 
 - Visualizes data from a **Hall Effect experiment on p-type Germanium**
 - Uses Python libraries like `matplotlib` and `pandas` to generate:
