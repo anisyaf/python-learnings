@@ -9,7 +9,7 @@ Welcome! This repository documents my Python learning journey, including coursew
 | Folder | Description |
 |--------|-------------|
 | `00-scripts/` | Concepts I've learned applied |
-| `01-projects/` | End-to-end mini-projects using Python|
+| `01-projects/` | Mini-projects using Python|
 
 ---
 
