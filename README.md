@@ -8,9 +8,8 @@ Welcome! This repository documents my Python learning journey, including coursew
 
 | Folder | Description |
 |--------|-------------|
-| `00-basics/` | Fundamentals — variables, loops, functions, etc. |
+| `00-scripts/` | Concepts I've learned applied |
 | `01-projects/` | End-to-end mini-projects using Python|
-| `02-it-automation-scripts/` | Scripts from the course |
 
 ---
 
@@ -25,8 +24,6 @@ Welcome! This repository documents my Python learning journey, including coursew
   - Hall voltage vs magnetic field plots
   - Temperature-dependent charge carrier trends
 - Replaces manual plotting with reproducible, accurate visualizations
-
-*More coming soon*
 
 ---
 
@@ -44,20 +41,11 @@ This script demonstrates fundamental Python concepts including:
 - Modulus and exponentiation operations
 - Basic error-checking logic: In the get_remainder() function to handle zero or equal input cases
 
-*_More to update_*
-
 ## Learning Sources
 
 - [Google IT Automation with Python – Coursera](https://www.coursera.org/professional-certificates/google-it-automation)
 - [Personal notes, experiments, and documentation]
 
----
-
-## Currently Working On
-
-- Completing **Module 3** of Course 1 of Google IT Automation with Python
-- Uploading **Python basics**, **automation scripts**, and **past C++ work on c-plus learnings**
-  
 ---
 
 Thanks for checking out my journey! Feel free to explore, suggest, or follow along :)
